@@ -6,20 +6,27 @@
   "exports": {
     "./button": "./src/button.tsx",
     "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
+    "./code": "./src/code.tsx",
+    "./Div": "./src/InputBox.tsx"
   },
   "scripts": {
+    "build": "tailwindcss -i ./styles.css -o ./dist/index.css",
+    "dev": "tailwindcss -i ./styles.css -o ./dist/index.css --watch",
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
+    "@repo/tailwind-config": "*",
     "@repo/typescript-config": "*",
     "@turbo/gen": "^1.12.4",
     "@types/node": "^20.11.24",
     "@types/react": "18.3.0",
     "@types/react-dom": "18.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
     "typescript": "5.5.4"
   },
   "dependencies": {
