@@ -17,6 +17,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@repo/database": "*",
     "@repo/tailwind-config": "*",
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
