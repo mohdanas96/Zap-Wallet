@@ -19,12 +19,5 @@ const ThemeImage = (props: Props) => {
 }
 
 export default function Home() {
-  return (
-    <div className="bg-slate-300 p-5 text-center text-black">
-      Docs app
-      <div>
-        <Div />
-      </div>
-    </div>
-  )
+  return <div className="bg-slate-300 p-5 text-center text-black">Docs app</div>
 }

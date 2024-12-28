@@ -1,7 +1,6 @@
 import Image, { type ImageProps } from 'next/image'
 import { Button } from '@repo/ui/button'
 import styles from './page.module.css'
-import { InputBox } from '@repo/ui/InputBox'
 
 type Props = Omit<ImageProps, 'src'> & {
   srcLight: string
@@ -20,10 +19,5 @@ const ThemeImage = (props: Props) => {
 }
 
 export default function Home() {
-  return (
-    <div className="bg-slate-300 p-5 text-black text-center">
-      User app
-      <InputBox />
-    </div>
-  )
+  return <div className="bg-slate-300 p-5 text-black text-center">User app</div>
 }
